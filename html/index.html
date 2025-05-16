@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <button id="menuBtn" class="menu-btn">☰</button>
+        <nav id="sidebar" class="sidebar">
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#modulo1">Módulo 1</a></li>
+                <li><a href="#modulo2">Módulo 2</a></li>
+                <li><a href="#modulo3">Módulo 3</a></li>
+                <li><a href="#modulo4">Módulo 4</a></li>
+                <li><a href="#modulo5">Módulo 5</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="image-container">
+            <div class="image-slider">
+                <img id="slideshow" class="active" src="../img/imagen1.jpg" alt="Imagen Una">
+                <div class="image-text">Mente En Marcha</div>
+            </div>
+        </div>
+
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <p>Bienvenido al Dashboard de la aplicación.</p>
+        </section>
+
+        <section id="modulo1">
+            <h2>    Bienestar Mental</h2>
+            <p>Contenido del Módulo 1.</p>
+        </section>
+
+        <section id="modulo2">
+            <div class="bienestar-mental">
+                <div class="bienestar-mental-contenido">
+                    <h1 class="bienestar-mental-titulo">Bienestar Mental</h1>
+                    <p class="bienestar-mental-texto">El bienestar mental es fundamental para enfrentar los desafíos diarios con equilibrio y resiliencia. Cuidar nuestra mente nos permite mantener una actitud positiva y gestionar el estrés de manera efectiva.</p>
+            
+                    <div class="bienestar-mental-frase">
+                        "La calma interior comienza con una respiración profunda."
+                    </div>
+            
+                    <div class="bienestar-mental-actividad">
+                        <h2 class="bienestar-mental-subtitulo">Actividad Interactiva: Respiración Guiada</h2>
+                        <p class="bienestar-mental-texto">Realiza un ejercicio de respiración consciente. Inhala profundamente, mantén el aire unos segundos y luego exhala despacio. Repite este ciclo durante 2 minutos.</p>
+                        
+                        <button class="bienestar-mental-btn" onclick="location.href='actividad_BM.html'">&#8592; Ir a la Actividad</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="modulo3">
+            <h2>Módulo 3</h2>
+            <p>Contenido del Módulo 3.</p>
+        </section>
+
+        <section id="modulo4">
+            <h2>Módulo 4</h2>
+            <p>Contenido del Módulo 4.</p>
+        </section>
+
+        <section id="modulo5">
+            <h2>Módulo 5</h2>
+            <p>Contenido del Módulo 5.</p>
+        </section>
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

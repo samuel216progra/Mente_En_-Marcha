@@ -1,0 +1,42 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #1a202c;
+    color: white;
+}
+
+.actividad-container {
+    text-align: center;
+}
+
+.circulo-respiracion {
+    width: 150px;
+    height: 150px;
+    background-color: #68d391;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.btn-comenzar, .btn-regresar {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #2c5282;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-comenzar:hover, .btn-regresar:hover {
+    background-color: #4a5568;
+}
