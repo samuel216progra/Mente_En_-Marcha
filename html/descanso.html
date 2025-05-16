@@ -7,6 +7,7 @@
 
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
 
+    <link rel="stylesheet" href="../css/variables.css">
     <link rel="stylesheet" href="../css/global.css">
 </head>
 
@@ -16,6 +17,9 @@
             <img src="../img/logo.jpg"
                 alt="Logo del sitio: una manzana verde, una pesa de gimnasio, y un coraz&oacute;n con el s&iacute;mbolo de latido PQRST, dentro de un ciculo, y el texto 'H&aacute;bitos saludables'"
             />
+            <div>
+                Mente en Marcha
+            </div>
         </div>
 
         <nav>
@@ -29,33 +33,47 @@
     </header>
 
     <main>
-        
+
+        <section id="intro">
+            <h1>El poder de un buen descanso</h1>
+            <br>
+            <p>
+                Dormir bien no es un lujo, es una necesidad fundamental para que el cuerpo y la mente funcionen correctamente. Un descanso adecuado mejora la memoria, regula el estado de ánimo y fortalece el sistema inmunológico. En esta sección, descubrirás cómo mejorar tu calidad de sueño y por qué el descanso es uno de los pilares esenciales para llevar una vida saludable.
+            </p>
+        </section>
+
+        <section class="slider">
+            <div>
+                <img src="https://salud.nih.gov/sites/salud/files/styles/max_1300x1300/public/2022-12/201304-hombre-despierta-estira.jpg?itok=zOugaoY9" class="slide active">
+                <img src="https://www.utadeo.edu.co/sites/tadeo/files/node/wysiwyg/la_importancia_de_dormir_bien_-_fig.2_1.png" class="slide">
+                <img src="https://www.brainandlife.org/siteassets/current-issue/2023/februarymarch/sleep-well-main.jpg" class="slide">
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </section>
+
     </main>
 
     <footer>
-        <section>
-            <h2>
+        <div>
+            <h2 class="footer-text-info">
                 Mantente informado
             </h2>
-            <p>Recibe las ultimas actualizaciones de bienestar</p>
-        </section>
+            <p class="footer-text-info">Recibe las ultimas actualizaciones de bienestar</p>
+        </div>
 
         <div>
             <div id="logo-nav">
                 <img src="../img/logo.jpg"
                     alt="Logo del sitio: una manzana verde, una pesa de gimnasio, y un coraz&oacute;n con el s&iacute;mbolo de latido PQRST, dentro de un ciculo, y el texto 'H&aacute;bitos saludables'"
                 />
+                <h2 class="footer-text-info">
+                    Mente en Marcha
+                </h2>
             </div>
-
-            <nav>
-                <a href="index.html">Inicio</a>
-                <a href="bienestar-mental.html">Bienestar Mental</a>
-                <a href="alimentacion.html">Alimentaci&oacute;n Saludable</a>
-                <a href="actividad-fisica.html">Actividad F&iacute;sica</a>
-                <a href="tecnicas-estudio.html">T&eacute;cnicas de Estudio</a>
-                <a href="descanso.html" id="active">Sue&ntilde;o y Descanso</a>
-            </nav>
         </div>
     </footer>
+
+    <script src="../js/global.js"></script>
 </body>
 </html>

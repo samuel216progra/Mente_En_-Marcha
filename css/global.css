@@ -1,13 +1,31 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Gill Sans MT";
+    color: var(--color-azul-marino);
+    font-size:  18px;
 }
 
-div#logo-nav > img {
-    width: 100%;
-}
+/* desktop */
+/** header */
 div#logo-nav {
+    width: 18%;
+
+    margin: 5px 0 5px 5px;
+
+    display: flex;
+    align-items: center;
+}
+div#logo-nav > img {
     width: 80px;
+}
+div#logo-nav > div {
+    width: calc(100% - 80px);
+    margin-left: 10px;
+
+    font-size:x-large;
 }
 
 header {
@@ -16,18 +34,121 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    background-color: var(--color-cyan);
 }
 
 nav {
     margin-right: 1%;
+    padding: 40px 10px 40px 10px;
 }
 
 nav > a {
-    padding: 4% 10px 4% 10px;
+    padding: 3.5% 10px 3.5% 10px;
 }
 
-footer > div {
+nav > a:hover {
+    background-color: var(--color-azul-marino);
+    color: var(--color-cyan);
+}
+
+#active {
+    background-color: #5ca8a8;
+}
+
+
+/** main */
+main {
+    min-height: calc(100vh - 100px - 137.2px);
+    max-width: 80%;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+#intro {
+    margin-left: 2%;
+    width: 95%;
+}
+#intro > p {
+    font-size: 20px;
+}
+h1 {
+    margin-top: 20px;
+    font-size: 42px;
+}
+
+/*** slide */
+.slider {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 100px - 137.2px); /* Ajustable */
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 0;
+}
+.slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    font-size: 30px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+.slider:hover button {
+    opacity: 1;
+}
+
+.prev {
+    left: 10px;
+}
+.next {
+    right: 10px;
+}
+
+/** footer */
+footer {
+    background-color: var(--color-azul-marino);
+}
+
+footer div {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+p.footer-text-info {
+    color: var(--color-amarillo);
+}
+
+.footer-text-info {
+    color: var(--color-naranja);
+}
+
+/* desktop mini */
+@media screen and (width <= 1295px) {
+    /* header */
+    /* main */
+    /** footer */
 }
