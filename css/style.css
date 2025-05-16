@@ -22,14 +22,15 @@ header {
     border: none;
     color: white;
     cursor: pointer;
+    z-index: 10;
 }
 
 .sidebar {
-    position: absolute;
+    position: fixed;
     top: 0;
-    right: -200px;
     width: 200px;
     height: 100vh;
+    display: none;
     background: #2d3748;
     color: white;
     transition: right 0.3s ease;
@@ -53,6 +54,7 @@ header {
 
 .sidebar.show {
     right: 0;
+    display: block;
 }
 
 .image-container {

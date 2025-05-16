@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const images = ['../img/imagen1.jpg', '../img/imagen2.jpg', '../img/imagen3.jpg', '../img/imagen4.jpg', '../img/imagen5.jpg'];
 
     let currentIndex = 0;
-    
+
 
     // Precargar imágenes
     images.forEach((src) => {
@@ -32,10 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // script.js
 
+/*
 // Mostrar el menú al pasar el mouse
 sidebar.addEventListener('mouseenter', () => {
     sidebar.classList.add('show');
 });
+*/
 
 // Ocultar el menú cuando el mouse salga
 sidebar.addEventListener('mouseleave', () => {
