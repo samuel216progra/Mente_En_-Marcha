@@ -62,7 +62,7 @@ main {
     min-height: calc(100vh - 100px - 137.2px);
     max-width: 80%;
     margin: 0 auto;
-    line-height: 1.5;
+    line-height: val(--text-line-height);
 }
 
 #intro {
@@ -144,6 +144,10 @@ p.footer-text-info {
 
 .footer-text-info {
     color: var(--color-naranja);
+}
+
+.footer-first-section {
+    padding: 10px 0 10px 0;
 }
 
 /* desktop mini */
