@@ -15,15 +15,27 @@ body, html {
 }
 
 .circulo-respiracion {
-    width: 150px;
-    height: 150px;
+    width: 50vh;
+    height: 50vh;
     background-color: #68d391;
     border-radius: 50%;
+    border: 15px solid #2c5282;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 1rem;
+    transition: transform 0.5s ease;
+}
+
+.inhala {
+    border-color: #63b3ed;
+    transform: scale(1.1);
+}
+
+.exhala {
+    border-color: #e53e3e;
+    transform: scale(0.9);
 }
 
 .btn-comenzar, .btn-regresar {
@@ -39,4 +51,10 @@ body, html {
 
 .btn-comenzar:hover, .btn-regresar:hover {
     background-color: #4a5568;
+}
+
+.btn-regresar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }

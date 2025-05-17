@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(changeImage, 3000);
 });
 
-// script.js
+
 
 // Mostrar el menú al pasar el mouse
 sidebar.addEventListener('mouseenter', () => {
