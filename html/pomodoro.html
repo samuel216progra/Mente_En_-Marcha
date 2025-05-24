@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Temporizador Pomodoro</title>
+  <link rel="stylesheet" href="../css/pomodoro.css" />
+</head>
+<body>
+    <button class="btn-regresar" onclick="location.href='index.html'">⟵ Regresar</button>
+
+  <div class="pomodoro-container">
+    <h1>Temporizador Pomodoro</h1>
+    <div class="timer">
+      <span id="minutes">25</span>:<span id="seconds">00</span>
+    </div>
+    <div class="controls">
+      <button onclick="startTimer()">Iniciar</button>
+      <button onclick="pauseTimer()">Pausar</button>
+      <button onclick="resetTimer()">Reiniciar</button>
+    </div>
+  </div>
+  <script src="../js/pomodoro.js"></script>
+</body>
+</html>

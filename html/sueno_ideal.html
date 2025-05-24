@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Sueño Ideal</title>
+  <link rel="stylesheet" href="../css/sueno_ideal.css">
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="fondo">
+    <button class="btn-regresar" onclick="location.href='index.html'">⟵ Regresar</button>
+    <div class="contenedor">
+      <h1>Calculadora de Sueño Ideal</h1>
+
+      <label for="tipo">¿Qué quieres calcular?</label>
+      <select id="tipo">
+        <option value="despertar">Hora para despertarme</option>
+        <option value="dormir">Hora para dormirme</option>
+      </select>
+
+      <label for="hora">Selecciona la hora:</label>
+      <input type="time" id="hora">
+
+      <button onclick="calcular()">Calcular</button>
+
+      <div id="resultado" class="resultado">
+        Ingresa una hora y elige una opción.
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/sueno_ideal.js"></script>
+</body>
+</html>

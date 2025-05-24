@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <title>Mente en Marcha</title>
-        <link rel="stylesheet" href="../css/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@700&display=swap" rel="stylesheet">
-        <link rel="icon" type="image/png" href="../img/logo sin fondo.png"> <!-- Aquí se coloca el favicon -->
-    </head>
-<body>
-    <header>
+<head>
+    <meta charset="UTF-8">
+    <title>Mente en Marcha</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../img/logo sin fondo.png">
+</head>
+<header>
         <button id="menuBtn" class="menu-btn">☰</button>
         <nav id="sidebar" class="sidebar">
             <ul>
-                <li><a href="#dashboard">Dashboard</a></li>
-                <li><a href="#modulo1">Módulo 1</a></li>
-                <li><a href="#modulo2">Módulo 2</a></li>
-                <li><a href="#modulo3">Módulo 3</a></li>
-                <li><a href="#modulo4">Módulo 4</a></li>
-                <li><a href="#modulo5">Módulo 5</a></li>
+                <li><a href="#modulo">Mente En Marcha</a></li>
+                <li><a href="#modulo1">Bienestar Mental</a></li>
+                <li><a href="#modulo2">Alimentación Saludable</a></li>
+                <li><a href="#modulo3">Técnicas de Estudio</a></li>
+                <li><a href="#modulo4">Actividad Física</a></li>
+                <li><a href="#modulo5">Sueño y Descanso</a></li>
             </ul>
         </nav>
     </header>
+<body>
+    
 
     <main>
         <div class="image-container">
@@ -29,18 +31,8 @@
             </div>
         </div>
 
-        <section id="dashboard">
-            <h2>Dashboard</h2>
-            <p>Bienvenido al Dashboard de la aplicación.</p>
-        </section>
-
         <section id="modulo1">
-            <h2>    Bienestar Mental</h2>
-            <p>Contenido del Módulo 1.</p>
-        </section>
-
-        <section id="modulo2">
-             <div class="bienestar-mental">
+            <div class="bienestar-mental" style="background-image: url('../img/borroso1.jpg'); background-size: cover; background-position: center;">
                 <div class="bienestar-mental-contenido">
                     <h1 class="bienestar-mental-titulo">Bienestar Mental</h1>
                     <p class="bienestar-mental-texto">El bienestar mental es fundamental para enfrentar los desafíos diarios con equilibrio y resiliencia. Cuidar nuestra mente nos permite mantener una actitud positiva y gestionar el estrés de manera efectiva.</p>
@@ -55,21 +47,80 @@
                 </div>
             </div>
         </section>
+        
+        <!-- Módulo 2 - Alimentación Saludable -->
+        <section id="modulo2">
+            <div class="bienestar-mental" style="background-image: url('../img/borroso2.jpg'); background-size: cover; background-position: center;">
+                <div class="bienestar-mental-contenido">
+                    <h1 class="bienestar-mental-titulo">Alimentación Saludable</h1>
+                    <p class="bienestar-mental-texto">Una alimentación inteligente transforma nuestra energía, enfoque y estado de ánimo. Aprender a elegir lo que comemos es el primer paso hacia una vida más plena.</p>
+                    <div class="bienestar-mental-frase">
+                        "Que tu medicina sea tu alimento, y tu alimento tu medicina."
+                    </div>
+                    <div class="bienestar-mental-actividad">
+                        <h2 class="bienestar-mental-subtitulo">¿Te animas a explorar tu nutrición?</h2>
+                        <p class="bienestar-mental-texto">Descubre recetas fáciles, compara tus opciones diarias y reta tus conocimientos con un juego nutritivo.</p>
+                        <button class="bienestar-mental-btn" onclick="location.href='actividad_alimentacion.html'">¡Empieza a nutrirte mejor!</button>
 
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Módulo 3 - Técnicas de Estudio -->
         <section id="modulo3">
-            <h2>Módulo 3</h2>
-            <p>Contenido del Módulo 3.</p>
+            <div class="bienestar-mental" style="background-image: url('../img/borroso3.jpg'); background-size: cover; background-position: center;">
+                <div class="bienestar-mental-contenido">
+                    <h1 class="bienestar-mental-titulo">Técnicas de Estudio</h1>
+                    <p class="bienestar-mental-texto">Estudiar de forma eficiente no significa estudiar más, sino hacerlo con estrategias que potencien tu memoria y concentración.</p>
+                    <div class="bienestar-mental-frase">
+                        "Estudiar con propósito es aprender para siempre."
+                    </div>
+                    <div class="bienestar-mental-actividad">
+                        <h2 class="bienestar-mental-subtitulo">¿Quieres estudiar sin estrés?</h2>
+                        <p class="bienestar-mental-texto">Explora métodos que se adaptan a ti, organiza tu tiempo con herramientas prácticas y pon en marcha tu concentración.</p>
+                        <button class="bienestar-mental-btn" onclick="location.href='tecnicas_estudio.html'">¡Mejora tu forma de aprender!</button>
+                    </div>
+                </div>
+            </div>
         </section>
-
+        
+        <!-- Módulo 4 - Actividad Física -->
         <section id="modulo4">
-            <h2>Módulo 4</h2>
-            <p>Contenido del Módulo 4.</p>
+            <div class="bienestar-mental" style="background-image: url('../img/borroso4.jpg'); background-size: cover; background-position: center;">
+                <div class="bienestar-mental-contenido">
+                    <h1 class="bienestar-mental-titulo">Actividad Física</h1>
+                    <p class="bienestar-mental-texto">Mover el cuerpo es liberar energía, mejorar el ánimo y despertar el potencial. No necesitas mucho tiempo, solo dar el primer paso.</p>
+                    <div class="bienestar-mental-frase">
+                        "El movimiento es vida."
+                    </div>
+                    <div class="bienestar-mental-actividad">
+                        <h2 class="bienestar-mental-subtitulo">¿Te gustaría sentirte con más energía?</h2>
+                        <p class="bienestar-mental-texto">Explora retos diarios, ejercicios rápidos y un calendario que te inspira a mantenerte en marcha.</p>
+                        <button class="bienestar-mental-btn" onclick="location.href='actividad_fisica.html'">¡Activa tu cuerpo ahora!</button>
+                    </div>
+                </div>
+            </div>
         </section>
-
+        
+        <!-- Módulo 5 - Sueño y Descanso -->
         <section id="modulo5">
-            <h2>Módulo 5</h2>
-            <p>Contenido del Módulo 5.</p>
+            <div class="bienestar-mental" style="background-image: url('../img/borroso5.jpg'); background-size: cover; background-position: center;">
+                <div class="bienestar-mental-contenido">
+                    <h1 class="bienestar-mental-titulo">Sueño y Descanso</h1>
+                    <p class="bienestar-mental-texto">Dormir bien es recuperar tu energía física y mental. Un buen descanso impacta en tu creatividad, memoria y ánimo.</p>
+                    <div class="bienestar-mental-frase">
+                        "Dormir no es tiempo perdido, es tiempo invertido en ti."
+                    </div>
+                    <div class="bienestar-mental-actividad">
+                        <h2 class="bienestar-mental-subtitulo">¿Te gustaría dormir mejor?</h2>
+                        <p class="bienestar-mental-texto">Calcula tus ciclos ideales, descubre hábitos nocturnos y crea un entorno perfecto para descansar.</p>
+                        <button class="bienestar-mental-btn" onclick="location.href='sueno_ideal.html'">¡Descansa como mereces!</button>
+                    </div>
+                </div>
+            </div>
         </section>
+        
     </main>
 
     <script src="../js/script.js"></script>

@@ -1,60 +1,84 @@
-body, html {
+/* --- Reset y básicos --- */
+* {
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
     font-family: Arial, sans-serif;
-    background: #1a202c;
-    color: white;
+    color: #ffffff;
+    scroll-behavior: smooth;
+    background: url('../img/ac1.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
+/* --- Contenedor principal --- */
 .actividad-container {
-    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.5); /* oscurece un poco para mejorar la lectura */
 }
 
+/* --- Botón regresar --- */
+.btn-regresar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #4a5568;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-regresar:hover {
+    background-color: #2d3748;
+}
+
+/* --- Círculo de respiración --- */
 .circulo-respiracion {
-    width: 50vh;
-    height: 50vh;
-    background-color: #68d391;
+    width: 200px;
+    height: 200px;
+    background-color: #63b3ed;
     border-radius: 50%;
-    border: 15px solid #2c5282;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
-    margin: 1rem;
-    transition: transform 0.5s ease;
+    font-size: 1.5rem;
+    font-weight: bold;
+    animation: fadeIn 1s ease;
+    box-shadow: 0 0 30px rgba(99, 179, 237, 0.7);
 }
 
-.inhala {
-    border-color: #63b3ed;
-    transform: scale(1.1);
-}
-
-.exhala {
-    border-color: #e53e3e;
-    transform: scale(0.9);
-}
-
-.btn-comenzar, .btn-regresar {
-    margin: 0.5rem;
-    padding: 0.5rem 1rem;
-    border: none;
-    background-color: #2c5282;
+/* --- Botón comenzar --- */
+.btn-comenzar {
+    background-color: #48bb78;
     color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.btn-comenzar:hover, .btn-regresar:hover {
-    background-color: #4a5568;
+.btn-comenzar:hover {
+    background-color: #38a169;
 }
 
-.btn-regresar {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+/* --- Animaciones --- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
