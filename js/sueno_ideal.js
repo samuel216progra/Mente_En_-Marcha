@@ -28,6 +28,8 @@ function calcular() {
       let m = nuevaFecha.getMinutes().toString().padStart(2, '0');
       resultados.push(`${h}:${m}`);
     }
+
+    resultados.reverse();
   
     let mensaje = tipo === "despertar"
       ? "Para despertarte a esa hora, podrías dormirte a:"
