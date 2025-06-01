@@ -30,8 +30,8 @@ function calcular() {
     }
   
     let mensaje = tipo === "despertar"
-      ? "Si te duermes a esa hora, podrías despertarte a:"
-      : "Para despertarte a esa hora, podrías dormirte a:";
+      ? "Para despertarte a esa hora, podrías dormirte a:"
+      : "Si te duermes a esa hora, podrías despertarte a:";
   
     document.getElementById("resultado").innerHTML =
       `<strong>${mensaje}</strong><br>${resultados.join(" | ")}`;
