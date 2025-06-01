@@ -19,9 +19,9 @@ function calcular() {
     for (let i = 3; i <= ciclos; i++) {
       let nuevaFecha = new Date(baseDate.getTime());
       if (tipo === "despertar") {
-        nuevaFecha.setTime(nuevaFecha.getTime() + i * cicloMS);
+          nuevaFecha.setTime(nuevaFecha.getTime() - i * cicloMS);
       } else {
-        nuevaFecha.setTime(nuevaFecha.getTime() - i * cicloMS);
+          nuevaFecha.setTime(nuevaFecha.getTime() + i * cicloMS);
       }
   
       let h = nuevaFecha.getHours().toString().padStart(2, '0');
